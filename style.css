@@ -1,0 +1,81 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* root é para definir tags dentro do css, ou seja, foi colocado a tag "--orange", para que a cor laranja 
+possa ser usada no body */
+
+:root {
+    --orange: #f2c14e;
+    --winning-blocks: #2d414b;
+}
+
+body {
+    /*Definida a cor usando var(--orange), aplicando o link*/
+    color: var(--orange);
+    /*Definir qual é a font*/
+    font-family: 'Courier New', Courier, monospace;
+}
+
+h1{
+    /* tamanho da font */
+    font-size: 40px;
+    /* capslock */
+    text-transform: uppercase;
+}
+    /*marcando o id chamado com "."*/ 
+.container {
+    /*dimensionando a página*/
+    padding: 40px; /*Tamanho em que o espaço que ele vai ocupar*/
+    height: 100vh;
+    display: flex;
+    /*colocando no centro da pag com "justify-content" e "align-items"*/
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; /*definindo a direção em que vai estar */
+    /*definindo a cor de fundo com "background-color"*/
+    background-color: #37505c;
+}
+/*linkando a tag definida da div*/
+#gameboard {
+    /*dimensionando o gameboard*/
+    width: 450px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
+/*definindo detalhes da caixa*/
+.box {
+    height: 150px;
+    width: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--orange);
+    font-size: 120px;
+    border-right: 2px solid;
+    border-bottom: 2px solid;
+}
+.box:nth-child(3n){
+    border-right: none; /*definindo onde não terá linhas*/
+}
+.box:nth-child(6) ~ .box {
+    border-bottom: none; /*definindo onde não terá linha*/
+}
+/*Definindo detalhes do botão*/
+button {
+    padding: 10px 20px; /*Tamanho em que o espaço que ele vai ocupar*/
+    border-radius: 10px; /*detalhe da borda*/
+    background-color: var(--orange); /*definindo cor do fundo com var link root*/
+    color: #333;
+    border-color: var(--orange); /*definindo a cor da borda com var link root*/
+    font-size: 18px; /*tamano da fonte*/
+    transition: 200ms transform;
+    font-weight: 600; /*espessura da font*/
+}
+button:hover {
+    cursor: pointer;
+    transform: translate(-2px);
+}
