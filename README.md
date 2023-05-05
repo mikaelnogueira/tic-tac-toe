@@ -18,7 +18,7 @@
   <br>
 	<h2>Access the Site 🔗</h2>
 	<p>You can access the Tic-Tac-Toe game on my portfolio, available on my profile.</p>
-	<u><a href="https://mikaelnogueira.github.io/jogo-da-velha/">Click here to access the Tic-Tac-Toe game</a></u>
+	<u><a href="https://mikaelnogueira.github.io/tic-tac-toe/">Click here to access the Tic-Tac-Toe game</a></u>
   <br>
   <hr>
   <br>
